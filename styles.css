@@ -1,0 +1,145 @@
+/* Base styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+:root {
+  --bg: #f4f4f4;
+  --text: #333;
+  --card-bg: #fff;
+  --border: #ddd;
+  --btn-bg: #007bff;
+  --btn-text: #fff;
+  --danger: #dc3545;
+  --success: #28a745;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #eaeaea;
+  --card-bg: #1e1e1e;
+  --border: #333;
+  --btn-bg: #0d6efd;
+  --btn-text: #fff;
+  --danger: #ff4d4d;
+  --success: #4caf50;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1, h3 {
+  margin-bottom: 10px;
+}
+
+.muted {
+  color: gray;
+  font-size: 0.9em;
+}
+
+.flash {
+  background: var(--success);
+  color: white;
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 6px;
+}
+
+.error {
+  background: var(--danger);
+  color: white;
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 6px;
+}
+
+/* Task list */
+.list {
+  margin-top: 15px;
+}
+
+.task {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.task.done {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.task .title {
+  flex: 1;
+  margin-left: 10px;
+}
+
+/* Buttons */
+.btn {
+  border: none;
+  padding: 6px 12px;
+  margin: 2px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  transition: 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn.danger {
+  background: var(--danger);
+}
+
+.btn.success {
+  background: var(--success);
+}
+
+.btn.secondary {
+  background: gray;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  background: var(--border);
+  color: var(--text);
+}
+
+/* Row utility */
+.row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Dark mode toggle */
+.dark-toggle {
+  float: right;
+  cursor: pointer;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
