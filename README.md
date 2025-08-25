@@ -1,6 +1,6 @@
-# PHP To‑Do List App (Plain PHP + MySQL)
+# PHP TaskBoard-PHP App (Plain PHP + MySQL)
 
-A simple, secure(ish) To‑Do list application using **PDO prepared statements** and a small set of files.
+
 
 ## Features
 - Add tasks with optional deadlines
