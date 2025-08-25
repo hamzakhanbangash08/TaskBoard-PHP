@@ -1,4 +1,4 @@
-# PHP TaskBoard-PHP App (Plain PHP + MySQL)
+# TaskBoard-PHP App (Plain PHP + MySQL)
 
 
 
